@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Booking hotels</title>    
+  <meta charset="UTF-8">
+  <!-- <script src="https://kit.fontawesome.com/cc2ecd69b3.js"></script>   -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
+  <link rel="stylesheet" href="assests/css/main.css">
+  
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container pb-4">
+      <div class="row">
+        <div class="col-3 pb-4">
+          <div class="bg-danger p-3">
+            <h3>Search</h3>
+            <label class="my-0">Destination/Property name</label>
+            <form autocomplete="off" action="/action_page.php">
+              <div class="autocomplete w-100">
+                <input id="myInput" class="inputForAutocomplete w-100" type="text" name="myCountry" placeholder="Country">
+              </div>
+            </form>
+            <label class="mb-0">Check-in Date</label>
+            <input type="date" name="check-in" id="check-in" class="mb-2 w-100">
+            <label class="mb-0">Check-out Date</label>
+            <input type="date" name="cheki_out" id="check-out" class="mb-2 w-100">
+          
+            
+            <select class="bg-light d-block mb-2" id="adults">
+              <option>1 adult</option>
+              <option>2 adults</option>
+              <option>3 adults</option>
+              <option>4 adults</option>
+              <option>5 adults</option>
+              <option>6 adults</option>
+              <option>7 adults</option>
+              <option>8 adults</option>
+            </select>  
+            <div class="container">
+          <div class="row" id="q">
+            <select class="col-6 pl-0 bg-light d-inline-block" id="children">
+              <option>no childe</option>
+              <option>1 childe</option>
+              <option>2 children</option>
+              <option>3 children</option>
+              <option>4 children</option>
+              <option>5 children</option>
+              <option>6 children</option>
+              <option>7 children</option>
+              <option>8 children</option>
+            </select> 
+                                
+            <select class="col-6 pl-0 bg-light d-inline-block" id="rooms">
+              <option>1 room</option>
+              <option>2 rooms</option>
+              <option>3 rooms</option>
+              <option>4 rooms</option>
+              <option>5 rooms</option>
+              <option>6 rooms</option>
+              <option>7 rooms</option>
+              <option>8 rooms</option>
+            </select>              
+          </div>
+          </div>
+            <label class="mt-4">
+              <input type="checkbox">
+              I am traveling for business.
+            </label>  
+            <div class="text-right">
+              <button class="btn btn-primary" id="searchBtn">Search</button>
+            </div>
+            
+          </div>
+          <!-- filtener start -->  
+        
+          <section class="card mt-3">
+            
+              <div class="card-heading">
+                <h6>Filter by</h6>
+                <hr>
+              </div>
+              <div class="card-body pt-0" id="filters">
+                <h6>Rating</h6>
+                <div id="rating"> 
+                  <!-- onmouseup="getFilters()" -->
+                  <input class="filterer rating" type="checkbox" value="2">2 stars <span class="propertiesCount"></span><br>
+                  <input class="filterer rating" type="checkbox" value="3">3 stars <span class="propertiesCount"></span><br>
+                  <input class="filterer rating" type="checkbox" value="4">4 stars <span class="propertiesCount"></span><br>
+                  <input class="filterer rating" type="checkbox" value="5">5 stars <span class="propertiesCount"></span><br>
+                  <input class="filterer rating" type="checkbox" value="6">6 stars <span class="propertiesCount"></span><br>
+                </div>
+                <h6 class="mt-2">Property Type</h6>
+                <div id="propertyType">
+                  <input class="filterer propertyType" type="checkbox" value="Apartment">Apartments
+                  <span class="propertiesCount"></span><br>
+                  <input class="filterer propertyType" type="checkbox" value="Hotel">Hotels
+                  <span class="propertiesCount"></span><br>
+                  <input class="filterer propertyType" type="checkbox" value="Bad and Breakfast">Bad and Breakfast
+                  <span class="propertiesCount"></span><br>
+                </div>
+                <h6 class="mt-2">Fun things to do</h6>
+                <div id="fun">
+                  <input class="filterer things" type="checkbox" value="Sauna">Sauna
+                  <span class="propertiesCount"></span><br>
+                  <input class="filterer things" type="checkbox" value="Bycicle">Bycicle
+                  <span class="propertiesCount"></span><br> 
+                </div>
+              </div>
+            
+          </section>
+        </div>
+        <div class="col-9">
+          <h3 id="amountOfHotels">Yerevan: 16 proprites found</h3>
+          <p>3 reasons to visit:<span>frienldy locals, food & history</span></p>         
+          <div id="hotels">            
+          </div>    
+          <hr>                                                    
+        </div>
+      </div>  
+    </div>
+  </main>
+
+
+
+
+  <script src="assests/script/data/getHotels.js"></script>
+  <script src="assests/script/view/viewHotels.js"></script>
+  <script src="assests/script/controller/filter.js"></script>
+  <script src="assests/script/controller/location.js"></script>
+  <script src="assests/script/controller/afterRefresh.js"></script>
+  <script src="assests/script/controller/searchBtn.js"></script>
+  <script src="assests/script/controller/autocomplete.js"></script>
+  
+</body>
+</html>
