@@ -114,34 +114,6 @@ let data = [
     funThings: "Sauna",
     dateFrom: "08/8/2019",
     dateTo: "11/02/2019"
-  },
-  {
-    name: "name14",
-    rating: "1",
-    propertyType: "Bad and Breakfast",
-    img:
-      "https://r-ak.bstatic.com/xdata/images/hotel/square200/178139609.jpg?k=5d783ef7732f2f51417c8d76d2d881df42913158c604dedde9b6ac5227dc5729&o=",
-    funThings: "Bycicle",
-    dateFrom: "9/08/2019",
-    dateTo: "12/09/2019"
-  },
-  {
-    name: "name15",
-    rating: "2",
-    propertyType: "Apartment",
-    img:
-      "https://q-ak.bstatic.com/xdata/images/hotel/square200/208400131.jpg?k=65623f26d1f8704f7af27ca25b13f3e0cfc6870ca426fce5e3bc53f654ce72e0&o=",
-    funThings: "Bycicle"
-  },
-  {
-    name: "name16",
-    rating: "3",
-    propertyType: "Hotel",
-    img:
-      "https://r-ak.bstatic.com/xdata/images/hotel/square200/120289586.jpg?k=9c035ceca9e081603d73d9461cb930615efcf98d43adb11d844acb37eeae306c&o=",
-    funThings: "Bycicle",
-    dateFrom: "8/08/2019",
-    dateTo: "12/09/2019"
   }
 ];
 
