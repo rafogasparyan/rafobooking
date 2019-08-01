@@ -125,14 +125,7 @@ let data = [
     dateFrom: "9/08/2019",
     dateTo: "12/09/2019"
   },
-  {
-    name: "name15",
-    rating: "2",
-    propertyType: "Apartment",
-    img:
-      "https://q-ak.bstatic.com/xdata/images/hotel/square200/208400131.jpg?k=65623f26d1f8704f7af27ca25b13f3e0cfc6870ca426fce5e3bc53f654ce72e0&o=",
-    funThings: "Bycicle"
-  }
+
 ];
 
 class Hotels {
