@@ -144,7 +144,7 @@ let data = [
     dateTo: "12/09/2019"
   },
   {
-    name: "name16",
+    name: "name17",
     rating: "3",
     propertyType: "Hotel",
     img:
