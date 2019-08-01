@@ -132,17 +132,17 @@ let data = [
     img:
       "https://q-ak.bstatic.com/xdata/images/hotel/square200/208400131.jpg?k=65623f26d1f8704f7af27ca25b13f3e0cfc6870ca426fce5e3bc53f654ce72e0&o=",
     funThings: "Bycicle"
-  },
-  {
-    name: "name16",
-    rating: "3",
-    propertyType: "Hotel",
-    img:
-      "https://r-ak.bstatic.com/xdata/images/hotel/square200/120289586.jpg?k=9c035ceca9e081603d73d9461cb930615efcf98d43adb11d844acb37eeae306c&o=",
-    funThings: "Bycicle",
-    dateFrom: "8/08/2019",
-    dateTo: "12/09/2019"
   }
+  // {
+  //   name: "name16",
+  //   rating: "3",
+  //   propertyType: "Hotel",
+  //   img:
+  //     "https://r-ak.bstatic.com/xdata/images/hotel/square200/120289586.jpg?k=9c035ceca9e081603d73d9461cb930615efcf98d43adb11d844acb37eeae306c&o=",
+  //   funThings: "Bycicle",
+  //   dateFrom: "8/08/2019",
+  //   dateTo: "12/09/2019"
+  // }
 ];
 
 class Hotels {
